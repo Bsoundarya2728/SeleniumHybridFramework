@@ -1,0 +1,13 @@
+package practise_Java;
+
+public class StringClasses {
+	public static void main(String[] arg) {
+		
+	StringBuffer sbuf=new StringBuffer("Naresh");
+	sbuf.append("Soundarya");
+	sbuf.setCharAt(1, "S");
+	System.out.println(sbuf);
+	
+	}
+	
+}

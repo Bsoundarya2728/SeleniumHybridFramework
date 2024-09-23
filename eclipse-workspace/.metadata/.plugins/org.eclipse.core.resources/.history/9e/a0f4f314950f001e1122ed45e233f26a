@@ -1,0 +1,43 @@
+package restAssuredTest;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+import java.util.HashMap;
+
+public class Post_Demo {
+	
+	public static HashMap datamap=new HashMap();
+
+	//Preparing Data for post
+	@BeforeClass
+	public void setData()
+	{
+		datamap.put("name",RestUtilityFile.name());
+		datamap.put("job", RestUtilityFile.job());
+		
+		RestAssured.baseURI="";
+		RestAssured.basePath=""; //Query parameter or path parameter
+	}
+	
+	@Test
+	public void postData()
+	{
+	
+	given()
+		.contentType("application/json")
+		.body(datamap)
+
+	.when()
+		.post("http://reqres.in/api/users")
+	.then()
+		.statusCode(201)
+		.log().all();
+		
+	}
+}

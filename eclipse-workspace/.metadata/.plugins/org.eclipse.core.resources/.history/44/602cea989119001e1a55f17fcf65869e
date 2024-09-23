@@ -1,0 +1,13 @@
+package practise_Java;
+
+class increment{
+	int count;
+	public void count() {
+		count++;
+	}
+}
+
+public class ThreadConcepts {
+	
+
+}

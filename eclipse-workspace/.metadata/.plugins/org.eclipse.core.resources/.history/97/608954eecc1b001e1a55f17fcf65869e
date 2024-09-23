@@ -1,0 +1,24 @@
+package practise_Java;
+
+class Base1 
+{  
+    public void baseMethod()  
+    {  
+        System.out.println("BaseMethod called ...");  
+    }  
+}  
+class Derived1 extends Base1   
+{  
+    public void baseMethod()  
+    {  
+        System.out.println("Derived method called ...");  
+    }  
+}  
+public class OverloadingNew   
+{  
+    public static void main (String args[])  
+    {  
+        Base1 b = new  
+        b.baseMethod();  
+    }  
+}  

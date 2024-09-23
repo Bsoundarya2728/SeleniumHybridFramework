@@ -1,0 +1,20 @@
+package practise_Java;
+
+public class StringClasses {
+	public static void main(String[] arg) {
+		
+	StringBuffer sbuf=new StringBuffer("Naresh");
+	sbuf.append("Soundarya");
+	sbuf.setCharAt(1, 'S');
+	System.out.println(sbuf);
+	
+	StringBuilder sbul=new StringBuilder("Soundarya");
+	sbul.append("Naresh");
+	System.out.println(sbul);
+	
+	String s = new String("Bejjenki");
+	s.charAt(7)
+	
+	}
+	
+}

@@ -1,0 +1,10 @@
+package restAssured_Demo;
+
+public class Add_Data {
+	
+	public static void data()
+	{
+		
+	}
+
+}

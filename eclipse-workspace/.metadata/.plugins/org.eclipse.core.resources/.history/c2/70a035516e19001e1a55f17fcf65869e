@@ -1,0 +1,9 @@
+package practise_Java;
+
+public class StringClasses {
+	
+	StringBuffer sbuf=new StringBuffer("Naresh");
+	System.out.println(sbuf);
+
+	
+}

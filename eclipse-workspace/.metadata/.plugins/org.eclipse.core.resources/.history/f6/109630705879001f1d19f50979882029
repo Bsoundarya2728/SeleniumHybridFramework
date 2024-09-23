@@ -1,0 +1,25 @@
+package requests;
+
+import org.testng.annotations.Test;
+
+
+/*
+ given()
+ 	content type, set cookies, add auth, add param, set header info etc...	
+ when()
+ 	get, post, put, delete
+ then()
+ 	validate status code, extract response, extract headers cookies & response body ...
+ add() - is also part of then(), if we want use we can use add()
+ */
+public class HTTPRequests {
+	
+	@Test
+	void getUser()
+	{
+		given()
+		when()
+		then()		
+	}
+	
+}
