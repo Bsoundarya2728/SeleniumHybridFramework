@@ -12,6 +12,7 @@ public class T001_TimeSheetTest extends BaseClass {
 	{
 		HomePage hp=new HomePage(driver);
 		hp.clickOnTimeSheet();
+		hp.selectDate();
 	}
 
 }
